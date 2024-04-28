@@ -1,8 +1,7 @@
 import './index.css';
 import createProjectObject from './project';
+import './dom';
 
-let project = createProjectObject();
-project.setItem("Movie Night", "Big Day", "2024-04-25", "1");
-
-localStorage.setItem("project", project.toJSON());
+export let project = createProjectObject();
+project.setItem("Movie Night", "Big Day", "2024-04-30", "1", "1");
 console.log(localStorage.getItem("project"));

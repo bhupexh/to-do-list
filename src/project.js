@@ -5,7 +5,14 @@ function createProjectObject(){
     toDo: [],
     setItem : function (title, description, due, priority){
       due = differenceInDays(parseISO(due), new Date());
-      this.toDo.push({title, description, due, priority});
+      this.toDo.push({ 
+        id: this.toDo.length + 1,
+        title,
+        description,
+        due,
+        priority
+      });
+      return this.toDo.length + 1;
     },
     getItem: function(index){
       if (index >= 0 && index < this.todos.length) {
