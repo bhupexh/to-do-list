@@ -32,15 +32,15 @@
         <form class="grid grid-cols-2 grid-rows-2 gap-4 m-6" id="form">
           <div class="flex flex-col justify-start col-start-1 col-end-2 row-start-1 row-end-2 p-4 border-2 border-gray-400 form-field">
             <label for="title" >Title:</label><br>
-            <input class="border-2 border-black" type="text" id="title" name="title">
+            <input class="p-2 border-2 border-black" type="text" id="title" name="title">
           </div><br>
           <div class="flex flex-col justify-start col-start-1 col-end-2 row-start-2 row-end-3 p-4 border-2 border-gray-400 form-field">
             <label for="description" >Description:</label><br>
-            <input class="border-2 border-black" type="text" id="description" name="description">
+            <input class="p-2 border-2 border-black" type="text" id="description" name="description">
           </div><br>
           <div class="flex flex-col justify-start col-start-2 col-end-3 row-start-1 row-end-2 p-4 border-2 border-gray-400 form-field">
             <label for="dueDate">Due Date:</label><br>
-            <input type="date" id="dueDate" name="dueDate">
+            <input class="border-2 border-black" type="date" id="dueDate" name="dueDate">
           </div><br>
           <fieldset class="col-start-2 col-end-3 row-start-2 row-end-3 p-4 border-2 border-gray-400 ">
             <legend>Priority:</legend>
@@ -64,13 +64,13 @@
         </form>
       </dialog>
       <div class="note-container group" data-task-id="1">
-        <div class="header">
+        <div class="header flex h-10 p-2 m-2 mt-3 mb-0 border-l-8 dark:border-l-[#7F1D1D] border-l-red-600 border-y-[1px] border-slate-700">
           <input type="checkbox" id="check">
            <label for="check" class="label">Big Day</label>
            <i class="group-hover:inline material-symbols-outlined expand-more">expand_more</i>
-           <i class="group-hover:inline material-symbols-outlined delete" id="delete">delete</i>
+           <i class="group-hover:inline material-symbols-outlined delete" id="delete1">delete</i>
         </div>
-        <div class="content"></div>
+        <div class="content grid grid-cols-2 grid-rows-3 gap-3 m-2 mt-0 pt-4 border border-t-0 border-l-black border-b-black [&>div]:border-2 [&>div]:p-2 hidden"></div>
       </div>
     </div>
     <div id="footer" class="flex items-center justify-center col-start-1 col-end-6 text-xl dark:bg-[#2c2c2c] dark:text-gray-400 bg-green-100 row-start-8 row-end-9">

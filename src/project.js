@@ -12,7 +12,7 @@ function createProjectObject(){
         due,
         priority
       });
-      return this.toDo.length + 1;
+      return this.toDo.length;
     },
     getItem: function(index){
       if (index >= 0 && index < this.todos.length) {

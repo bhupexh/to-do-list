@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.header{
-  @apply flex h-10 p-2 m-2 mt-3 border-l-8 dark:border-l-[#7F1D1D] border-l-red-600 border-y-[1px] border-slate-700;
-}
-
 .label{
   @apply pl-4 grow;  
 }
@@ -16,8 +12,4 @@
 
 .delete{
   @apply hidden pl-4 cursor-pointer dark:text-gray-200;
-}
-
-.expanded{
-  @apply inline ;
 }
