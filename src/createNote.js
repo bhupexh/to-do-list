@@ -1,4 +1,5 @@
-import { expandNote, removeNote } from './dom';
+import { removeNote } from './dom';
+import { expandNote } from './expandContent';
 import { project } from './index';
 
 const noteContainer = document.querySelector('.note-container');
@@ -23,7 +24,6 @@ export function displayNote(title, description, dueDate, priority, noteId) {
   headerClass.add(getLabelColor(priority));
   newNote.querySelector('.expand-more').addEventListener('click', expandNote);
   newNote.querySelector('.delete').addEventListener('click', removeNote);
-  
   newNote.classList.remove('hidden');
   document.getElementById('notes-container').appendChild(newNote);
 }

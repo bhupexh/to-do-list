@@ -24,8 +24,7 @@ function createProjectObject(){
     removeItem: function(index){
       if (index >= 0 && index < this.toDo.length) {
         this.toDo.splice(index, 1);
-        localStorage.setItem('project', this.toJSON()); 
-        console.log(this.toDo);
+        localStorage.setItem('project', this.toJSON());
       }
     },
     updateItem: function(id, field, value){

@@ -12,7 +12,6 @@ Array.from(deleteNote).forEach(element => {
 });
 
 export function removeNote(event) {
-  console.log(event.target.id);
   const note = this.parentNode.parentNode;
   const noteID = note.dataset.taskId - 1;
   document.getElementById('notes-container').removeChild(note);
